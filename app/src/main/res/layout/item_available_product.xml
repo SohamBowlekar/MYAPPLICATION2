@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- PRODUCT IMAGE -->
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_placeholder" />
+
+        <!-- RIGHT SIDE DETAILS -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <!-- PRODUCT NAME -->
+            <TextView
+                android:id="@+id/txtProductName"
+                android:text="Product Name"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- DISTRIBUTOR NAME -->
+            <TextView
+                android:id="@+id/txtDistributorName"
+                android:text="Distributor: ABC"
+                android:textSize="13sp"
+                android:textColor="#555555"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- CATEGORY -->
+            <TextView
+                android:id="@+id/txtCategory"
+                android:text="Category"
+                android:textSize="13sp"
+                android:textColor="#777777"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- AVAILABLE STOCK -->
+            <TextView
+                android:id="@+id/txtAvailableStock"
+                android:text="Available: 20"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#D32F2F"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- PRICE -->
+            <TextView
+                android:id="@+id/txtPrice"
+                android:text="₹100"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#2E7D32"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- QUANTITY SECTION -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:text="-"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"/>
+
+                <TextView
+                    android:id="@+id/txtQty"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="50dp"
+                    android:layout_height="42dp"/>
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:text="+"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"/>
+            </LinearLayout>
+
+            <!-- TOTAL PRICE -->
+            <TextView
+                android:id="@+id/txtTotal"
+                android:text="Total: ₹100"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- ADD BUTTON -->
+            <Button
+                android:id="@+id/btnAddProduct"
+                android:text="Add to Cart"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6A1B9A"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

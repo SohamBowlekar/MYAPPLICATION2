@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#FFF8E1">
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Distributor Products"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- AVAILABLE PRODUCTS -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Products"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAvailableProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp" />
+
+    <!-- MY CART -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Cart"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp" />
+
+    <!-- BUY BUTTON -->
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUY"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <!-- 🔥 NEW OPTIONS SECTION -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <!-- RAISE COMPLAINT -->
+    <Button
+        android:id="@+id/btnRaiseComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Raise Complaint"
+        android:layout_marginTop="6dp" />
+
+    <!-- GLASS BOTTLE RETURN -->
+    <Button
+        android:id="@+id/btnGlassBottleReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Glass Bottle Returns"
+        android:layout_marginTop="6dp" />
+
+    <!-- LOGOUT -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

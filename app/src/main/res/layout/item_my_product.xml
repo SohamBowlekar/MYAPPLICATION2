@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- PRODUCT IMAGE -->
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image_placeholder"/>
+
+    <!-- PRODUCT DETAILS -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <!-- PRODUCT NAME -->
+        <TextView
+            android:id="@+id/txtProductName"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- CATEGORY -->
+        <TextView
+            android:id="@+id/txtCategory"
+            android:text="Category"
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- PRICE -->
+        <TextView
+            android:id="@+id/txtProductPrice"
+            android:text="₹100"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- QUANTITY CONTROLS -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:text="-"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+
+            <TextView
+                android:id="@+id/txtProductQty"
+                android:text="Qty: 1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="70dp"
+                android:layout_height="36dp"/>
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:text="+"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+        </LinearLayout>
+
+        <!-- TOTAL PRICE -->
+        <TextView
+            android:id="@+id/txtProductTotal"
+            android:text="Total: ₹100"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- REMOVE BUTTON -->
+        <Button
+            android:id="@+id/btnRemove"
+            android:text="Remove"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

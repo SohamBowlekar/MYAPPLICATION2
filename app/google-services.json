@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559285743733",
+    "project_id": "fizzflow-d3a97",
+    "storage_bucket": "fizzflow-d3a97.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559285743733:android:c9f1bc6507b2da7f0dc83c",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbWI4RniVwZtbY4uPt3vivIPR9kjOWCjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

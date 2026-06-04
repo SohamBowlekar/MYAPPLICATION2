@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Distributor Products"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
+
+        <!-- AVAILABLE PRODUCTS TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Products"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp" />
+
+        <!-- AVAILABLE PRODUCTS LIST -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAvailableProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- MY CART TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Cart"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="6dp" />
+
+        <!-- MY CART LIST -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- BUY BUTTON -->
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="BUY"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+
+        <!-- 🔥 NEW SECTION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="6dp" />
+
+        <!-- VIEW ORDER REQUESTS -->
+        <Button
+            android:id="@+id/btnViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="View Order Requests"
+            android:layout_marginTop="10dp" />
+
+        <!-- VIEW COMPLAINTS -->
+        <Button
+            android:id="@+id/btnViewComplaints"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="View Complaints"
+            android:layout_marginTop="10dp" />
+
+        <!-- GLASS BOTTLE RETURN -->
+        <Button
+            android:id="@+id/btnGlassBottleReturn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="See Glass Bottle Returns"
+            android:layout_marginTop="10dp" />
+
+        <!-- LOGOUT BUTTON -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Logout"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

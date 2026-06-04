@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- ORDER CODE -->
+    <TextView
+        android:id="@+id/txtOrderCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Code: BUY-1234"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#6A1B9A" />
+
+    <!-- BUYER NAME -->
+    <TextView
+        android:id="@+id/txtBuyerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buyer: Rahul"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- CONTACT -->
+    <TextView
+        android:id="@+id/txtBuyerContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact: 9876543210"
+        android:textSize="14sp"/>
+
+    <!-- ADDRESS -->
+    <TextView
+        android:id="@+id/txtBuyerAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: Pune"
+        android:textSize="14sp"/>
+
+    <!-- PRODUCTS TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Products:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- PRODUCTS LIST -->
+    <TextView
+        android:id="@+id/txtProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pepsi x2\nSprite x3"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"/>
+
+    <!-- TOTAL -->
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: ₹300"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- ✅ STATUS (NEW) -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textStyle="bold"
+        android:textColor="#F57C00"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"/>
+
+    <!-- ✅ ACTION BUTTONS (NEW) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C"/>
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
